@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Favelas ONG</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Bootstrap 4 CSS -->
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+    <link href="../CSS/site.css" rel="stylesheet" />
+
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+
+   
+    <!------------------------ NAVBAR------------------------------------>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+               
+                <a href="#" class="navbar-left"><img style="width:150px;" src="../images/logo/cristo.png"></a>
+
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right" style="position:relative; top:20px;">
+                    <li><a href="../Index.html">HOME</a></li>
+                    <li><a href="../Portifolio/Portifolio.html">PORTIFOLIO</a></li>
+                    
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            MORE
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../Portifolio/Portifolio.html">PORTIFOLIO</a></li>
+                            
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+   <!---------------------------------------BODY------------------------------------>
+    
+    <div class="container" style="margin-top:110px;">
+    <div id="error"></div>
+    <form method="post">
+        <!--------------------------Name---------------------------------------->
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
+        </div>
+
+        <!------------------------Email------------------------------------------>
+        <div class="form-group">
+            <label for="email">Email address</label>
+            <input name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="youremail@mail.com">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+
+        <!--------------------------Password---------------------------------------->
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input name="password" type="password" class="form-control form-control-danger" id="password" placeholder="Password">
+        </div>
+       
+        <!--------------------------content---------------------------------------->
+        <div class="form-group">
+            <label name="content" for="content">Comments</label>
+            <textarea class="form-control" id="content" rows="3"></textarea>
+        </div>
+        
+        <!-----------------------------date------------------------------------->
+        <div class="form-group">
+            <label for="example-date-input">Date</label>
+            <input name="date" class="form-control" type="date" id="date">
+        </div>
+
+        <!----------------------------select-------------------------------------->
+        <div class="form-group">
+            <select class="custom-select">
+                <option selected>Open this select menu</option>
+                <option value="1">Morning</option>
+                <option value="2">Afternoon</option>
+                <option value="3">Evening</option>
+            </select>
+        </div>
+            <button type="submit" id="submit" class="btn">Submit</button>
+</form>
+
+
+
+</div>
+    
+    <!-------------------------FOOTER----------------------------------->
+<footer class="text-center">
+        <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a><br><br>
+        <div class="container-fluid">
+            <div class="row" >
+
+                <div id="developer" class="col-sm-3 text-center">
+                    The developer:
+                    <br><a>Henrique Costa</a><br>henrique_vc@hotmail.com<br>TAFE Petersham 2017
+                </div>
+
+                <div id="copyright" class="col-sm-3 text-center"><a href="#">Copyright & Terms</a><br />&copy;-2017</div>
+
+                <div id="advertiseOne" class="col-sm-3 text-center"><a href="http://www.bb.com.br/pbb/pagina-inicial#/"><img style="width:50%" src="../images/ads/banco-do-brasil.jpg" /></a></div>
+
+                <div id="advertiseTwo" class="col-sm-3 text-center"><a href="http://www.tim.com.br"><img style="width:70%" src="../images/ads/TIM_logo_2016.svg.png" /></a></div>
+            </div>
+        </div>
+
+    </footer>
+
+    
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="lib/bootstrap/js/src/"></script>
+    
+    
+<!--------------------------------------------------------------------->
+<!------------------------ SCRIPTS ------------------------------------>
+<!--------------------------------------------------------------------->
+    <script>
+            
+            $("form").submit(function (e) {
+            
+
+            var error = "";
+
+            if ($("#name").val() == "") {
+                error += "The Name field is required.<br>"
+            }
+
+            if ($("#password").val() == "") {
+                error += "The Password field is required.<br>"
+            }
+
+            if ($("#email").val() == "") {
+                error += "The Email field is required.<br>"
+            }
+
+            if ($("#date").val() == "") {
+                error += "The Date field is required."
+            }
+
+
+
+            if (error != "") {
+                e.preventDefault();
+
+                $("#error").html('<div class="alert alert-danger" role="alert"><p><strong>There were error(s) in your form:</strong></p>' + error + '</div>')
+            }
+            else {
+                $("form").unbind("submit").submit();
+
+            }
+            
+            
+        });
+        
+        $(document).ready(function () {
+            // Add smooth scrolling to all links in navbar + footer link ***********************************************************
+            $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 900, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        })
+
+        //SLIDE IN EFFECT ***********************************************************
+        $(window).scroll(function () {
+            $(".slideanim").each(function () {
+                var pos = $(this).offset().top;
+
+                var winTop = $(window).scrollTop();
+                if (pos < winTop + 600) {
+                    $(this).addClass("slide");
+                }
+            });
+        });
+        
+
+        
+    </script>

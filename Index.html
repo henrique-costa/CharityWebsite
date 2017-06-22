@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Favelas ONG</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Bootstrap 4 CSS -->
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+    <link href="CSS/site.css" rel="stylesheet" />
+
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+
+   
+    <!------------------------ NAVBAR------------------------------------>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+               
+                <a href="#" class="navbar-left"><img style="width:150px;" src="images/logo/cristo.png"></a>
+
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right" style="position:relative; top:20px;">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#news">NEWS</a></li>
+                    <li><a href="#tickets">TICKETS</a></li>
+                    <li><a href="#donation">DONATIONS</a></li>
+                    <li><a href="Portifolio/Portifolio.html">PORTIFOLIO</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            MORE
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Register/Register.html">REGISTER</a></li>
+                            <li><a href="Portifolio/Portifolio.html">PORTIFOLIO</a></li>
+                            
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+   <!---------------------------------------BODY------------------------------------>
+<!-- CAROUSEL -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators" id="home">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <!-- CAROUSEL IMAGE 1 -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active peopleCarouselImg">
+            <img class="peopleCarouselImg" src="images/rioCristo.jpg" alt="New York">
+            <div class="carousel-caption">
+                <h3>Cristo Redentor</h3>
+                <p>The atmosphere in Rio is lorem ipsum.</p>
+            </div>
+        </div>
+    <!-- CAROUSEL IMAGE 2 -->
+        <div class="item peopleCarouselImg">
+            <img class="peopleCarouselImg" src="images/rioFavelaCores.jpg" alt="Chicago">
+            <div class="carousel-caption">
+                <h3>Cores da Favela</h3>
+                <p>Aenean tincidunt consectetur magna, sit amet vulputate odio malesuada sed</p>
+            </div>
+        </div>
+    <!-- CAROUSEL IMAGE 3 -->
+        <div class="item peopleCarouselImg">
+            <img class="peopleCarouselImg" src="images/vidigal.jpg" alt="Chicago">
+            <div class="carousel-caption">
+                <h3>Favela do Vidigal</h3>
+                <p>Aenean tincidunt consectetur magna, sit amet vulputate odio malesuada sed</p>
+            </div>
+        </div>
+    <!-- CAROUSEL IMAGE 4 -->
+        <div class="item peopleCarouselImg">
+            <img class="peopleCarouselImg" src="images/rocinha.jpg" alt="Chicago">
+            <div class="carousel-caption">
+                <h3>Favela da Rocinha</h3>
+                <p>Aenean tincidunt consectetur magna, sit amet vulputate odio malesuada sed</p>
+            </div>
+        </div>
+    <!-- CAROUSEL IMAGE 5 -->
+        <div class="item peopleCarouselImg">
+            <img class="peopleCarouselImg" src="images/rioExercito.jpg" alt="Los Angeles">
+            <div class="carousel-caption">
+                <h3 style="color:yellow;">Exercito no Morro</h3>
+                <p style="color:yellow;">Aenean tincidunt consectetur magna, sit amet vulputate odio malesuada sed</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<!------------------------ FIM DO CAROUSEL ------------------------------------>
+
+<!------------------------ INICIO DA INFO DAS FAVELAS ------------------------------------>
+<div class="container-fluid containerWithPadding">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h1 class="addMargin">Favelas</h1>
+            <h3><strong>Historical info: </strong> </h3>
+            <p>Even before the first favela came into being, poor citizens were pushed away from the city and forced to live in the far suburbs. However, most modern favelas appeared in the 1970s due to rural exodus, when many people left rural areas of Brazil and moved to cities. Unable to find places to live, many people found themselves in favelas. Census data released in December 2011 by the Brazilian Institute of Geography and Statistics (IBGE) showed that in 2010, about 6 percent of the Brazilian population lived in slums. in areas of irregular occupation definable by lack of public services or urbanization, referred to by the IBGE as "subnormal agglomerations".</p>
+
+            <a href="https://en.wikipedia.org/wiki/Favela" class="btn btn-default addMargin">Learn More</a>
+        </div>
+
+    </div>
+</div>
+
+<div class="container-fluid bg-grey containerWithPadding slideanim">
+    <div class="row">
+        <div class="col-sm-4">
+            <span>
+                <img src="images/smallImages/mapaRioCapital.png" class="img-responsive" alt="Rio Map" />
+            </span>
+        </div>
+        <div class="col-sm-8">
+            <h2>Rio de Janeiro</h2>
+            <p><strong>Numbers:</strong> Only in Rio, there are more than 1000 favelas.</p>
+            <table class="table table-condensed">
+                <thead>
+                    <tr>
+                        <th>Service in Favela (Census 2010)</th>
+                        <th>Percentage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sanitation</td>
+                        <td>67.3%</td>
+                    </tr>
+                    <tr>
+                        <td>Water</td>
+                        <td>88.3%</td>
+                    </tr>
+                    <tr>
+                        <td>Eletricity</td>
+                        <td>99.7%</td>
+                    </tr>
+                    <tr>
+                        <td>Garbage Collection</td>
+                        <td>95.4%</td>
+                    </tr>
+                </tbody>
+                <thead>
+                    <tr>
+                        <th>People in Favela</th>
+                        <th>Population</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Brazil's Population</td>
+                        <td>11,400,000 (6%)</td>
+                    </tr>
+                </tbody>
+                <thead>
+                    <tr>
+                        <th>Demographics in Favela</th>
+                        <th>Proportion</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pardo or black</td>
+                        <td>68.4%</td>
+                    </tr>
+                    <tr>
+                        <td>Illiteracy</td>
+                        <td>8.4%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<!-- Container (Services Section) -->
+<div  class="container-fluid text-center">
+    <h1 class="addMargin">How we help</h1>
+    
+    
+    <div class="row">
+        <div class="col-sm-4 slideanim">
+            <span class="glyphicon glyphicon-education logo-small"></span>
+            <h3>EDUCATION</h3>
+            <p>Nam massa orci, ultrices sit amet eleifend vel, venenatis in erat. In bibendum nibh sed arcu accumsan, vel fermentum lacus dapibus.</p>
+        </div>
+        <div class="col-sm-4 slideanim">
+            <span class="glyphicon glyphicon-flag logo-small"></span>
+            <h3>SPORTS</h3>
+            <p>Cras pharetra luctus lorem ac posuere. Quisque aliquam diam non tortor viverra, nec ullamcorper lacus euismod.</p>
+        </div>
+        <div class="col-sm-4 slideanim">
+            <span class="glyphicon glyphicon-lock logo-small"></span>
+            <h3>JOBS</h3>
+            <p>Proin a sollicitudin sem. Sed scelerisque, mauris a vulputate condimentum, nibh mauris ultricies nisl, at iaculis arcu eros nec elit.</p>
+        </div>
+    </div>
+    <br><br>
+
+</div>
+
+
+<!------------------------ SECOND CONTAINER AFTER FAVELA INFO ------------------------------------>
+<div class="container-fluid text-center bg-grey" id="janela-musica">
+    <!-- LATEST NEWS -->
+    <h1 id="news" class="addMargin">Latest News</h1>
+        <div class="row">
+            
+            <div class="col-sm-4 slideanim">
+                <h3 class="text-center"><strong>Mano Brown show at Alemão</strong></h3>
+                <a href="#demo" data-toggle="collapse">
+                    <img src="images/smallImages/imgBrown.jpg" class="person" alt="Random Name">
+                </a>
+                <div id="demo" class="collapse collapse-border-margin">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Consectetur adipiscing elit. Nam mauris sem, pretium sed odio nec.</p>
+                    <p>24/03/2017</p>
+                </div>
+            </div>
+            <div class="col-sm-4 slideanim">
+                <h3 class="text-center"><strong>Inequality grow in 2016</strong></h3>
+                <a href="#demo2" data-toggle="collapse">
+                    <img src="images/smallImages/imgFavelaDaJanela.jpg" class="person" alt="Random Name">
+                </a>
+                <div id="demo2" class="collapse collapse-border-margin">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mauris sem, pretium sed odio nec.</p>
+                    <p>03/04/2017</p>
+                </div>
+            </div>
+            <div class="col-sm-4 slideanim">
+                <h3 class="text-center"><strong>Protests of the weekend</strong></h3>
+                <a href="#demo3" data-toggle="collapse">
+                    <img src="images/smallImages/imgProtesto.jpg" class="person" alt="Random Name">
+                </a>
+                <div id="demo3" class="collapse collapse-border-margin">
+                    <p>Donec eleifend, mauris sit amet hendrerit mattis, dui nisi convallis mauris.</p>
+                    <p>03/04/2017</p>
+                </div>
+            </div>
+        </div>
+
+    <!------------------------ SECOND ROW ------------------------------------>
+    <br />
+    <div class="row">
+        <div class="col-sm-4 slideanim">
+            <h3 class="text-center"><strong>More police in the community</strong></h3>
+            <a href="#demo4" data-toggle="collapse">
+                <img src="images/smallImages/imgSaoJorgeFuzil.jpg" class="person" alt="Random Name">
+            </a>
+            <div id="demo4" class="collapse collapse-border-margin">
+                <p>Donec eleifend, mauris sit amet hendrerit mattis, dui nisi convallis mauris, nec viverra velit nisi a sapien. In fringilla ligula id justo semper consequat eu et velit.</p>
+                <p>24/03/2017</p>
+            </div>
+        </div>
+        <div class="col-sm-4 slideanim">
+            <h3 class="text-center"><strong>Skate meetup at Vidigal</strong></h3>
+            <a href="#demo5" data-toggle="collapse">
+                <img src="images/smallImages/imgSkate.jpg" class="person" alt="Random Name">
+            </a>
+            <div id="demo5" class="collapse collapse-border-margin">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mauris sem, pretium sed odio nec, vehicula pretium metus. Etiam tristique tempor est.</p>
+                <p>Loves skate</p>
+                <p>29/03/2017</p>
+            </div>
+        </div>
+        <div class="col-sm-4 slideanim">
+            <h3 class="text-center"><strong>Relax fighting</strong></h3>
+            <a href="#demo6" data-toggle="collapse">
+                <img src="images/smallImages/imgUfc.jpg" class="person" alt="Random Name">
+            </a>
+            <div id="demo6" class="collapse collapse-border-margin">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mauris sem, pretium sed odio nec, vehicula pretium metus. Etiam tristique tempor est.</p>
+                <p>27/03/2017</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------------ TICKETS ------------------------------------>
+
+<div class="bg-1">
+    <div class="container slideanim" id="tickets">
+        <h3 class="text-center">NEXT SHOWS</h3>
+        <p class="text-center">Lorem ipsum we'll play you some music.<br> Remember to book your tickets!</p>
+
+        <ul class="list-group">
+            <li class="list-group-item">Racionais MCs <span class="label label-danger">Sold Out!</span></li>
+            <li class="list-group-item">Sabotage <span class="label label-danger">Sold Out!</span></li>
+            <li class="list-group-item">O Rappa <span class="badge">3</span></li>
+        </ul>
+
+        <!------------------------ NEXT SHOW PICTURES ------------------------------------>
+
+        <div class="row text-center">
+            <div class="col-sm-4">
+                <div class="thumbnail slideanim">
+                    <img src="images/artistas/orappa.jpeg" alt="Paris">
+                    <p><strong>O Rappa</strong></p>
+                    <p>Fri. 27 November 2017</p>
+                    <!-- Used to open the Modal -->
+                    <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="thumbnail slideanim">
+                    <img src="images/artistas/racionais.png" alt="New York">
+                    <p><strong>Racionais MCs</strong></p>
+                    <p>Sat. 28 March 2017</p>
+                    <!-- Used to open the Modal -->
+                    <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="thumbnail slideanim">
+                    <img src="images/artistas/Sabotage.jpg" alt="San Francisco">
+                    <p><strong>Sabotage</strong></p>
+                    <p>Sun. 29 April 2017</p>
+                    <!-- Used to open the Modal -->
+                    <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------------------ MODAL TICKETS ------------------------------------>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modalH4"><span class="glyphicon glyphicon-lock"></span> Tickets</h4>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <div class="form-group">
+                        <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> Tickets, $23 per person</label>
+                        <input type="number" class="form-control" id="psw" placeholder="How many?">
+                    </div>
+                    <div class="form-group">
+                        <label for="usrname"><span class="glyphicon glyphicon-user"></span> Send To</label>
+                        <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+                    </div>
+                    <button type="submit" class="btn btn-block">
+                        Pay
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+                    <span class="glyphicon glyphicon-remove"></span> Cancel
+                </button>
+                <p>Need <a href="#">help?</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!------------------------ DONATIONS PLANS ------------------------------------>
+<div class="container slideanim" id="donation">
+    <div class="text-center">
+        <h2>Donations</h2>
+        <h4>Choose a donation plan that works for you</h4>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                    <h1>Basic</h1>
+                </div>
+                <div class="panel-body">
+                    <p><strong>20</strong> Notebooks</p>
+                    <p><strong>10</strong> Shirts</p>
+                    <p><strong>5</strong> Shoes</p>
+                    <p><strong>2</strong> Balls</p>
+                    
+                </div>
+                <div class="panel-footer">
+                    <h3>$39</h3>
+                    <h4>per month</h4>
+                    <button class="btn btn-lg">Sign Up</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                    <h1>Pro</h1>
+                </div>
+                <div class="panel-body">
+                    <p><strong>20</strong> Shirts</p>
+                    <p><strong>15</strong> Balls</p>
+                    <p><strong>10</strong> Notebooks</p>
+                    <p><strong>5</strong> Balls</p>
+                    
+                </div>
+                <div class="panel-footer">
+                    <h3>$59</h3>
+                    <h4>per month</h4>
+                    <button class="btn btn-lg">Sign Up</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                    <h1>Premium</h1>
+                </div>
+                <div class="panel-body">
+                    <p><strong>50</strong> Shirts</p>
+                    <p><strong>30</strong> Balls</p>
+                    <p><strong>25</strong> Shoes</p>
+                    <p><strong>10</strong> Notebooks</p>
+                    
+                </div>
+                <div class="panel-footer">
+                    <h3>$99</h3>
+                    <h4>per month</h4>
+                    <button class="btn btn-lg">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------------------ CONTACT FORM ------------------------------------>
+<div class="container-fluid bg-grey">
+    <div class="container slideanim">
+        <h3 class="text-center">Contact</h3>
+        <p class="text-center"><em>We love your support!</em></p>
+        <div class="row test">
+            <div class="col-md-4">
+                <p>Want to know more?</p>
+                <p><span class="glyphicon glyphicon-map-marker"></span>Rio de Janeiro, BR</p>
+                <p><span class="glyphicon glyphicon-phone"></span>Phone: +55 1515151515</p>
+                <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                    </div>
+                </div>
+                <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+                <div class="row">
+                    <div class="col-md-12 form-group">
+                        <button class="btn pull-right" type="submit">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!------------------------ ADS SLIDE ------------------------------------>
+<div class="container-fluid text-center" style="margin-bottom:40px;">
+<h2>Sponsors</h2>
+<div id="myAdCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+           <img  class="adCarouselImg" src="images/ads/petobras.png" alt="petrobras"  />
+        </div>
+        <div class="item">
+            <img alt="paoDeAcucar" class="adCarouselImg" src="images/ads/pao-de-acucar.jpg" />
+        </div>
+        <div class="item">
+            <img alt="BB" class="adCarouselImg" src="images/ads/banco-do-brasil.jpg" />
+        </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myAdCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myAdCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+</div>
+<!-------------------------FOOTER----------------------------------->
+<footer class="text-center">
+        <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a><br><br>
+        <div class="container-fluid">
+            <div class="row" >
+
+                <div id="developer" class="col-sm-3 text-center">
+                    The developer:
+                    <br><a>Henrique Costa</a><br>henrique_vc@hotmail.com<br>TAFE Petersham 2017
+                </div>
+
+                <div id="copyright" class="col-sm-3 text-center"><a href="#">Copyright & Terms</a><br />&copy;-2017</div>
+
+                <div id="advertiseOne" class="col-sm-3 text-center"><a href="http://www.bb.com.br/pbb/pagina-inicial#/"><img style="width:50%" src="images/ads/banco-do-brasil.jpg" /></a></div>
+
+                <div id="advertiseTwo" class="col-sm-3 text-center"><a href="http://www.tim.com.br"><img style="width:70%" src="images/ads/TIM_logo_2016.svg.png" /></a></div>
+            </div>
+        </div>
+
+    </footer>
+
+    
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="lib/bootstrap/js/src/"></script>
+    
+    
+<!--------------------------------------------------------------------->
+<!------------------------ SCRIPTS ------------------------------------>
+<!--------------------------------------------------------------------->
+    <script>
+        /*SCRIPT TO ACTIVE THE PORTFOLIO
+//TESTE PARA VER SE SALVOU NO PENDRIVE       
+
+        //alert("sasass");
+
+        /*SCRIPT TO
+        *Add
+        *Smooth
+        *Scrolling
+        */
+        $(document).ready(function () {
+            // Add smooth scrolling to all links in navbar + footer link ***********************************************************
+            $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 900, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        })
+
+        //SLIDE IN EFFECT ***********************************************************
+        $(window).scroll(function () {
+            $(".slideanim").each(function () {
+                var pos = $(this).offset().top;
+
+                var winTop = $(window).scrollTop();
+                if (pos < winTop + 600) {
+                    $(this).addClass("slide");
+                }
+            });
+        });
+    </script>
+    </body>
+</html>
+
